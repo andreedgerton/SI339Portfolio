@@ -1,0 +1,41 @@
+img {
+    max-width: 250px;
+    max-height: 250px;
+    padding:10px;
+    border-right: 5px solid black;
+    
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid black;
+    margin: 25px;
+}
+
+.lions-text, .pistons-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    color: white;
+    line-height: 2;
+}
+
+.lions-text {
+    background-color: #0076B6;
+}
+
+.pistons-text {
+    background-color: #C8102E;
+}
+h2 {
+    padding: 0;
+}

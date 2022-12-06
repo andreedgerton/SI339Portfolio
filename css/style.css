@@ -1,0 +1,148 @@
+a.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+  
+a.skip:focus {
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: white 3px solid;
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #575757;
+}
+
+nav > img {
+    max-height: 75px;
+    max-width: 75px;
+}
+
+nav a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    padding: 5px;
+    text-align: center;
+}
+
+.active {
+    background-color: #272727;
+    font-weight: bold;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a:hover, a:focus {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d3d3d3;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 80px;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #575757;
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .nav_links {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav_links {
+        justify-content: right;
+    }
+
+    nav {
+        justify-content: right;
+    }
+
+    nav img {
+        display: none;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+    /*Turn off parallax*/
+    header{
+      background-attachment: initial;
+    }
+  }

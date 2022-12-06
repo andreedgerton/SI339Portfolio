@@ -1,0 +1,70 @@
+.pistons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: white;
+    background-color: #006272;
+}
+
+.card > header {
+    background-color:#9D2235;
+    color: white;
+    border-bottom: solid 5px #FFA300;
+    margin: 0px;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.pistons img {
+    width: 90%;
+    margin: 0 50px 50px 50px;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    align-items: center;
+    border: solid 2px black;
+    border-radius:50px 50px 0px 0px;
+    background-color: #006272;
+    margin: 20px;
+    box-shadow: 0 4px 6px #000;
+    color: white;
+}
+
+.card > img {
+    max-width: 75%;
+    border: 3px solid #FFA300;
+    margin: 50px 50px 0 50px;
+}
+
+.card > div {
+    margin: 0 25px 25px 25px;;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.players {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    color:white;
+    background-color:#9D2235;
+    border-radius: 10px;
+    border: solid 3px #FFA300;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px;
+}
+
+button:focus, button:hover {
+    box-shadow: 0 4px 10px #000;
+}
