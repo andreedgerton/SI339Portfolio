@@ -63,6 +63,7 @@ button {
     height: 50px;
     font-size: 20px;
     margin: 25px;
+    cursor: pointer;
 }
 
 button:focus, button:hover {

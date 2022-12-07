@@ -1,9 +1,6 @@
 img {
-    max-width: 250px;
-    max-height: 250px;
-    padding:10px;
-    border-right: 5px solid black;
-    
+    width: 100%;
+    border-bottom: 5px solid black;
 }
 
 .logos {
@@ -14,7 +11,7 @@ img {
 
 .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 5px solid black;
     margin: 25px;
 }
@@ -24,7 +21,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
     color: white;
     line-height: 2;
 }
@@ -38,4 +35,16 @@ img {
 }
 h2 {
     padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+
+    img {
+        border-bottom: none;
+        border-right: 5px solid black;
+        max-width: 25%;
+    }
 }

@@ -55,6 +55,7 @@ nav li {
 .active {
     background-color: #272727;
     font-weight: bold;
+    border: 2px solid white;
 }
 
 .nav_links {
@@ -104,9 +105,14 @@ footer {
     color: white;
     padding: 5px;
     width: 100%;
+    word-wrap: break-word;
 }
 
-@media screen and (min-width: 800px) {
+footer p {
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
     .nav_links {
         flex-direction: row;
         justify-content: space-evenly;
