@@ -150,3 +150,10 @@ img:focus, img:hover {
     }
 
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+
+     .container div:first-child {
+      background-attachment: initial;
+    }
+  }

@@ -151,4 +151,15 @@ footer p {
     header{
       background-attachment: initial;
     }
-  }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+  
+    a.skip{
+      -webkit-transition: none; 
+      transition: none;        
+     }
+}

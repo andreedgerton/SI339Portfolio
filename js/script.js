@@ -15,7 +15,6 @@ createApp({
       fetch('https://www.balldontlie.io/api/v1/players?search='+text)
       .then(res => res.json())
       .then(res => {
-        console.log(res);
         id = res.data[0].id;
         fetch('https://www.balldontlie.io/api/v1/season_averages?player_ids[]='+id)
         .then(res => res.json())
@@ -29,13 +28,14 @@ createApp({
     },
 
     show(index) {
-        console.log("worked");
       if(!this.active[index]) {
             document.getElementById("stats" + index).style.display = 'block';
+            document.getElementById(index).innerHTML = "Hide Stats";
             this.active[index] = true;
         }
         else {
             document.getElementById("stats" + index).style.display = 'none';
+            document.getElementById(index).innerHTML = "View Stats";
             this.active[index] = false;
         }
     }
