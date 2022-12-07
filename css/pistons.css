@@ -23,7 +23,7 @@
 }
 
 .card {
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-basis: 340px;
     align-items: center;
